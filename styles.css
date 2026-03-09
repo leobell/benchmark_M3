@@ -6,6 +6,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .nav-link, #altreAzioni button:nth-child(2) {
