@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/imgs/Netflix_Logo_RGB.png" alt="Bootstrap" width="100" height="40">
+                </a>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#tvShowSection">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My List</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-lg-end">
+                    <div id="altreAzioni" class="d-flex">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></button>
+                        <button>KIDS</button>
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></button>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="/assets/imgs/img-profilo.png" alt="immagine profilo" width="40" height="40">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Plan</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Personalize</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container-fluid mt-3" id="tvShowSection">
+            <div class="d-flex justify-content-between mb-5">
+                <div class="d-flex flex-wrap align-items-center gap-5">
+                    <h1>TV Shows</h1>
+                    <div class="dropdown">
+                        <button class="genereBtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Drama</a></li>
+                            <li><a class="dropdown-item" href="#">Comedy</a></li>
+                            <li><a class="dropdown-item" href="#">Action & Adventure</a></li>
+                            <li><a class="dropdown-item" href="#">Thriller & Mystery</a></li>
+                            <li><a class="dropdown-item" href="#">Sci-Fi & Fantasy</a></li>
+                            <li><a class="dropdown-item" href="#">Horror</a></li>
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="#">Anime</a></li>
+                            <li><a class="dropdown-item" href="#">Children & Family</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="visualSectionBtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-start-icon lucide-text-align-start"><path d="M21 5H3"/><path d="M15 12H3"/><path d="M17 19H3"/></svg></button>
+                    <button class="visualSectionBtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid-icon lucide-layout-grid"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></button>
+                </div>
+            </div>
+            <section>
+                <h3 class="mb-3 text-capitalize">trending now</h3>
+                <div class="container-fluid mb-5">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/1.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/2.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/3.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/4.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/5.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/6.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/7.png" alt="Film" >
+                                </div>                
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    
+                </div>
+            </section>
+            <section>
+                <h3 class="mb-3 text-capitalize">watch it again</h3>
+                <div class="container-fluid mb-5">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/7.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/8.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/9.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/10.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/11.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/12.png" alt="Film" >
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/assets/imgs/movies/13.png" alt="Film" >
+                                </div>                
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    
+                </div>
+            </section>
+            <section>
+                <h3 class="mb-3 text-capitalize">new releases</h3>
+                <div class="container-fluid mb-5">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/assets/imgs/movies/13.png" alt="Film" >
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/imgs/movies/14.png" alt="Film" >
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/imgs/movies/15.png" alt="Film" >
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/imgs/movies/16.png" alt="Film" >
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/imgs/movies/17.png" alt="Film" >
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/imgs/movies/18.png" alt="Film" >
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/imgs/movies/12.png" alt="Film" >
+                            </div>                
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>  
+        </div>
+    </main>
+
+    <footer class="container-lg my-5">
+        <div class="container mb-3">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a>
+        </div>
+        <div class="container mb-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-between">
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">audio and subtitles</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">media center</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">privacy</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">audio description</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">investor relations</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">legal notices</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">help center</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">jobs</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">cookie preferences</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">gift cards</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">terms of use</a></li>
+                        <li class="nav-item mb-2 text-capitalize"><a href="#">corporate information</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <button class="genereBtnService text-capitalize">service code</button>
+        <p>&copy; 1997-2019 Netflix, inc. {i-0d00fcda2fdf9c0de}</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

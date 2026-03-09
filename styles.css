@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #0a0a0a;
+    font-family: "Inter", sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-x: hidden;
+}
+
+.nav-link, #altreAzioni button:nth-child(2) {
+    color: rgb(141, 141, 141);
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+    font-weight: 500;
+}
+
+#altreAzioni {
+    gap: 20px;
+    align-items: center;
+}
+
+#altreAzioni button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    padding: 0;
+}
+
+#altreAzioni img {
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+h3 {
+    color: rgb(219, 219, 219);
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+main {
+    padding-bottom: 50px;
+}
+.genereBtn {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.visualSectionBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid rgb(141, 141, 141);
+    height: 35px;
+    width: 55px;
+    padding: 0;
+    color: rgb(141, 141, 141);
+}
+
+.visualSectionBtn:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+
+
+.row>* {
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+
+}
+
+.swiper-wrapper {
+    overflow: visible;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide:hover {
+    transform: scale(1.2);
+    z-index: 13;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.swiper-slide-active:hover {
+    transform: scale(1.2);
+    z-index: 13;
+    transform-origin: left;
+    box-shadow: 0px 0px 10px rgb(27, 27, 27);
+}
+
+.swiper-slide.last-visible:hover {
+    transform-origin: right;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: rgb(141, 141, 141);;
+}
+footer.container-lg {
+    padding: 0;
+}
+footer div:first-child a svg {
+    width: 30px;
+    height: 30px;
+    color: rgba(100, 100, 100, 0.507);
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+footer div:first-child a svg:hover {
+    color: rgba(180, 180, 180, 0.507);
+}
+
+footer div:first-child {
+    padding: 0;
+}
+
+footer div:last-child div.col a {
+    color: rgba(100, 100, 100, 0.507);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+footer div:last-child div.col a:hover {
+    color: rgba(180, 180, 180, 0.507);
+}
+
+.genereBtnService {
+    background-color: transparent;
+    color: rgba(100, 100, 100, 0.507);
+    border: 2px solid rgba(100, 100, 100, 0.507);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 5px 5px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.genereBtnService:hover {
+    color: rgba(180, 180, 180, 0.507);
+    border: 2px solid rgba(180, 180, 180, 0.507);
+    box-shadow: 0 0 5px rgba(180, 180, 180, 0.507);
+}
+
+footer p {
+    font-size: 0.8em;
+    margin: 0;
+}
