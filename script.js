@@ -9,18 +9,22 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 
-    navigation: {
-        enabled: false,
-    },
     
+
     breakpoints: {
         768: {
         slidesPerView: 3,
         slidesPerGroup: 3,
+        navigation: {
+        enabled: false,
+    },
         },
         992: {
         slidesPerView: 4,
         slidesPerGroup: 4,
+        navigation: {
+        enabled: false,
+    },
         },
         1200: {
         slidesPerView: 6,
